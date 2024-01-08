@@ -25,7 +25,6 @@ export const render = createRender(() => {
   const [value, setValue] = useModelState("value");
   return (
     <>
-      <h1>hello</h1>
       <NiiVue
         imageUrl={"https://niivue.github.io/niivue-demo-images/mni152.nii.gz"}
       ></NiiVue>
