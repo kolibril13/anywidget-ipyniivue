@@ -13,4 +13,5 @@ except importlib.metadata.PackageNotFoundError:
 class NiivueWidget(anywidget.AnyWidget):
     _esm = pathlib.Path(__file__).parent / "static" / "widget.js"
     _css = pathlib.Path(__file__).parent / "static" / "widget.css"
-    value = traitlets.Int(0).tag(sync=True)
+    value = traitlets.Unicode("https://niivue.github.io/niivue-demo-images/mni152.nii.gz").tag(sync=True)
+    color = traitlets.Unicode("gray").tag(sync=True)
